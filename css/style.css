@@ -6,8 +6,8 @@
     --color-body: #918ca4;
 }
 
-/* Typography  Start */
 
+/* Typography  Start */
 html {
     font-size: 62.5%;
 }
@@ -57,11 +57,10 @@ p {
         font-size: 2.4rem;
     }
 }
-
 /* Typography  End */
 
-/* Links Start */
 
+/* Links Start */
 a {
     text-decoration: none;
 }
@@ -88,11 +87,10 @@ a {
         font-size: 1.5rem;
     }
 }
-
 /* Links End */
 
-/* Badges Start */
 
+/* Badges Start */
 .badge {
     border-radius: 20px;
     font-size: 2rem;
@@ -124,5 +122,34 @@ a {
         font-size: 1.2rem;
     }
 }
-
 /* Badges End */
+
+
+/* Lists Start */
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings);
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick {
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem ;
+}
+
+.list--tick .list__item {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item {
+        padding-left: 0;
+    }
+}
+/* Lists End */
