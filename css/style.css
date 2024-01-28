@@ -812,3 +812,28 @@ font-size: 2.4rem;
     margin: 0 auto;
 }
 /* Plans Block End */
+
+
+/* Features Block Start */
+.block-features {
+    margin-bottom: 17rem;
+}
+
+.block-features:first-of-type {
+    margin-top: 6rem;
+}
+
+.block-features .grid {
+    gap: 5rem;
+}
+
+.block-features__image {
+    justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+    .block-features:nth-of-type(even) .block-features__content {
+        order: 2;
+    }
+}
+/* Features Block End */
