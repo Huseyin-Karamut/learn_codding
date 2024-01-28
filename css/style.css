@@ -346,6 +346,10 @@ a {
 
 
 /* Plans Start */
+.plan {
+    transition: transform 0.2s ease-out;
+}
+
 .plan__name {
 color: #fff;
 margin: 0;
@@ -403,6 +407,18 @@ font-size: 2.4rem;
 
     .plan__description {
         font-size: 1.7rem;
+    }
+    
+    .plan--popular {
+    transform: scale(1.1);
+    }
+
+    .plan:hover {
+        transform: scale(1.05);
+    }
+    
+    .plan--popular:hover {
+        transform: scale(1.15);
     }
 }
 /* Plans End */
@@ -490,6 +506,12 @@ font-size: 2.4rem;
 @media screen and (min-width: 768px) {
     .grid--1x2 {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 /* Grid End */
@@ -778,3 +800,15 @@ font-size: 2.4rem;
     }
 }
 /* Domain Block End */
+
+
+/* Plans Block Start */
+.block-plans .grid {
+    gap: 8rem 4rem;
+}
+
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* Plans Block End */
