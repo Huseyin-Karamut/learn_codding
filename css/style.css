@@ -42,6 +42,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 500;
 }
 
 p {
@@ -138,7 +139,6 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -149,6 +149,7 @@ a {
 .list--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem ;
+    color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -427,10 +428,12 @@ font-size: 2.4rem;
 /* Media Start */
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title {
     margin-top: 0;
+    color: #fff;
 }
 
 .media__body {
@@ -649,7 +652,8 @@ font-size: 2.4rem;
 }
 
 .block__heading {
-    margin-top: 0;
+    margin: 0 auto 5rem;
+    text-align: center;
 }
 
 .block--dark {
@@ -657,18 +661,20 @@ font-size: 2.4rem;
     color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
     color: #fff;
 }
 
 .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .container {
@@ -746,10 +752,6 @@ font-size: 2.4rem;
 
 
 /* Hero Start */
-.hero {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-
 .hero__tagline {
     font-size: 2rem;
     color: #b9c3cf;
@@ -837,3 +839,33 @@ font-size: 2.4rem;
     }
 }
 /* Features Block End */
+
+
+/* Showcase Block Start */
+.block-showcase__image > img {
+    width: 100%;
+}
+
+.block-showcase .list {
+    margin-left: 4rem;
+}
+
+.block-showcase .block__header {
+    margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .block-showcase .grid {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .block-showcase__image {
+        justify-self: end;
+    }
+
+    .block-showcase__image > img {
+        width: auto;
+        max-width: 700px;
+    }
+}
+/* Showcase Block Start */
