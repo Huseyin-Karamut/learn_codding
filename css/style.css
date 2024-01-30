@@ -837,6 +837,10 @@ font-size: 2.4rem;
     justify-self: center;
 }
 
+.block-features__image source, img {
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
     .block-features:nth-of-type(even) .block-features__content {
         order: 2;
